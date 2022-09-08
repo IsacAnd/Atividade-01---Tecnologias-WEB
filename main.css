@@ -1,11 +1,45 @@
 * {
-  font-family: sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+a.Disciplinas{
+  background-color: #161d7cb7;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+a:hover, a:active {
+  background-color: #464b91b7;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 8px 8px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background-color: rgb(240, 232, 232);
+}
+
+input[type=submit] {
+  font: normal 20px Arial;
+  width: 100%;
+  padding: 8px 8px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background-color: #161d7cb7;
+}
+
 body {
+  background-color: rgb(233, 233, 212);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,13 +47,13 @@ body {
 }
 
 header {
-  background: #394674;
-  color: #fff;
+  background: #161d7cb7;
+  color: white;
   width: 100%;
   padding: 0.5rem;
-
   display: flex;
   justify-content: center;
+  font: normal 20px Arial;
 }
 
 nav {
@@ -36,16 +70,17 @@ form {
   display: flex;
   flex-direction: column;
   padding: 2rem;
+  font: normal 20px Arial;
+  background-position: left center;
+  font-weight: 700;
 }
 
 footer {
-  background: #394674;
-  color: #fff;
+  background: #161d7cb7;
+  color: white;
+  text-align: center;
   width: 100%;
-  padding: 0.5rem;
-
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  bottom: 0;
+  height:min-content;
+  padding: 5px;
+  position: relative;
 }

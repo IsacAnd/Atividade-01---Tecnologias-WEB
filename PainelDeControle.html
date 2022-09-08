@@ -6,44 +6,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="main.css">
+    <style>
+        body{
+            background-color: #B3BDF5;
+        }
+        #Aluno{
+            font: normal 20px Verdana;
+            color: white;
+            background-color: #161d7cb7;
+            text-align: center;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 40px;
+            font-weight: 400;
+        }
+        #Progressão{
+            font: normal 20px Arial;
+        }
+        [lang] {
+            color: black;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Painel de Controle do Aluno</h1><br>
     </header><br>
+    <body>
+        
+    </body>
+    </html>
 
     <div>
-        <a href="Histórico.html">Histórico</a> | <a href="CadastroDeComponentesCurriculares.html">Cadastro de Componentes Curriculares</a> | <a href="Atividade01.html">Sair</a>
+        <a class="Disciplinas"href="Histórico.html">Histórico</a> | <a class="Disciplinas" href="CadastroDeComponentesCurriculares.html">Cadastro de Componentes Curriculares</a> | <a class="Disciplinas" href="Atividade01.html">Sair</a>
     <br><br>
     </div>
 
-    <table>
-        <tr>
-          <td><img  width="120" height="120" src='imagem.png'/></td>
-          
-          <td> Isac Andrade Alves <input type="color"> </br>
-        IRA: 10.0 </br>
-        Email: Isac.andrade@gmail.com </br>
-        Créditos cursados: 396h<br>
-          </td> 
-        </tr>
+    <div id="Aluno">
+        <table lang="pt_br"> 
+            <img  width="120" height="120" src='imagem.png'/></td><br>
+            Isac Andrade Alves <input type="color"> </br>
+            IRA: 10.0 </br>
+            Email: Isac.andrade@gmail.com </br>
+            Créditos cursados: 396h<br> 
+        </table>
+    </div> <br><br>
        
-    </table><br>
+    <br>
 
-    <div> Componentes Curriculares:
-        <a href=""> <li>SB0485 - ELETROMAGNETISMO APLICADO</li></a> 
+    <td>
+        <b>DISCIPLINAS CURSADAS</b><br>
+    </td><br>
 
-        <a href=""> <li>SB0486 - TECNOLOGIAS WEB</li></a>
+    
+    <div> 
 
-        <a href=""> <li>SB0487 -HIGIENE INDUSTRIAL</li></a>
+        <a class="Disciplinas" href=""> SB0485 - ELETROMAGNETISMO APLICADO</a><br><br>
 
-        <a href=""> <li>SB0485 - QUALIDADE DE SOFTWARE</li></a>
+        <a class="Disciplinas" href=""> SB0486 - TECNOLOGIAS WEB</a><br><br>
 
-        <a href=""> <li>SB0485 - FUNDAMENTOS DE ADMINISTRAÇÃO</li></a>
+        <a class="Disciplinas" href=""> SB0487 -HIGIENE INDUSTRIAL</a><br><br>
+
+        <a class="Disciplinas" href=""> SB0485 - QUALIDADE DE SOFTWARE</li></a><br><br>
+
+        <a class="Disciplinas" href=""> SB0485 - FUNDAMENTOS DE ADMINISTRAÇÃO</a><br><br>
+  
 
     </div><br><br>
 
-    <div id = "Progressão">
+    <div id="Progressão">
         Disciplinas Obrigatórias: <label for="file" ></label><progress id="file" max="100" value="32"> 32%</progress><br>
         Disciplinas eletivas: <label for="file" ></label><progress id="file" max="100" value="50"> 50%</progress><br>
         Horas de estágio obrigatório: <label for="file" ></label><progress id="file" max="100" value="32"> 32%</progress><br>
@@ -66,10 +97,10 @@
             <td>100%</td>
         </tr>
 
-    </table>
+    </table><br>
 
     <footer>
-        <h2></h2>
+        todos os direitos reservados
     </footer>
 
 </body>

@@ -6,24 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NOVO SIGAA</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      h2::first-line{
+        color: white;
+        text-align: center;
+      }
+      label{
+        text-align: start;
+        color: white;
+      }
+    </style>
 </head>
-<body>
-    <br>
+<body style="background-color:rgb(233, 233, 212);">
     <header>
         <h1>Novo SIGAA</h1>
     </header><br><br>
 
-    <h2>Login</h2>
+    <tr>
+      <td><img  width="330" height="235" src='imagem3.png'/></td>
+    </tr><br>
     
-    <form action="PainelDeControle.html">
+    <div style="text-align: center; background-color: #161d7cb7; border-radius: 10px; box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.085);">
+      <br><h2>Login</h2>
+      <form action="PainelDeControle.html">
         <label for="fname">Usuário</label>
-        <input type="text" id="fname" name="fname" value="">
+        <input type="text" id="fname" name="fname" value="" size="40" height="40" >
         <label for="lname">Senha</label>
-        <input type="text" id="lname" name="lname" value=""><br>
-        <input type="submit" value="Entrar">
-      </form> 
+        <input type="text" id="lname" name="lname" value="" size="40" height="10"><br>
+        <a class="Disciplinas" href="PainelDeControle.html"> Entrar</a><br>
+    </form> 
+    </div><br>
 
-      <footer></footer>
+      <footer>
+        todos os direitos reservados
+      </footer>
 
 </body>
 </html>
