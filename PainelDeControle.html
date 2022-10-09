@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
     <title>Document</title>
     <link rel="stylesheet" href="main.css">
     <style>
@@ -26,7 +32,12 @@
         [lang] {
             color: black;
         }
+        
     </style>
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-person" viewBox="0 0 16 16">
+        <path d="M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+        <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2v9.255S12 12 8 12s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h5.5v2z"/>
+      </svg>
 </head>
 <body>
     <header>
@@ -37,27 +48,142 @@
     </body>
     </html>
 
-    <div>
-        <a class="Disciplinas"href="Histórico.html">Histórico</a> | <a class="Disciplinas" href="CadastroDeComponentesCurriculares.html">Cadastro de Componentes Curriculares</a> | <a class="Disciplinas" href="Atividade01.html">Sair</a>
-    <br><br>
-    </div>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Novo Sigaa</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Histórico.html">Histórico</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="CadastroDeComponentesCurriculares.html">Cadastro De Componentes Curriculares</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="PainelDeControle.html">Painel De Controle</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Atividade01.html">Sair</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Atividade01.html"><button type="button" class="btn btn-primary">
+                    Notificações <span class="badge text-bg-secondary">4</span>
+                  </button></a>
+              </li>
 
-    <div id="Aluno">
-        <table lang="pt_br"> 
-            <img  width="120" height="120" src='imagem.png'/></td><br>
-            Isac Andrade Alves <input type="color"> </br>
-            IRA: 10.0 </br>
-            Email: Isac.andrade@gmail.com </br>
-            Créditos cursados: 396h<br> 
-        </table>
-    </div> <br><br>
-       
-    <br>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav><br><br>
+
+    <div>
+        <div class="card text-bg-dark mb-3" style="width: 18rem;">
+            <img src="imagem.png" class="card-img-top" alt="...">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-file-earmark-person" viewBox="0 0 16 16">
+                <path d="M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2v9.255S12 12 8 12s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h5.5v2z"/>
+              </svg>Discente: Isac Andrade Alves</li>
+              <li class="list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-paperclip" viewBox="0 0 16 16">
+                <path d="M4.5 3a2.5 2.5 0 0 1 5 0v9a1.5 1.5 0 0 1-3 0V5a.5.5 0 0 1 1 0v7a.5.5 0 0 0 1 0V3a1.5 1.5 0 1 0-3 0v9a2.5 2.5 0 0 0 5 0V5a.5.5 0 0 1 1 0v7a3.5 3.5 0 1 1-7 0V3z"/>
+              </svg>IRA: 10.0</li>
+              <li class="list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-wallet-fill" viewBox="0 0 16 16">
+                <path d="M1.5 2A1.5 1.5 0 0 0 0 3.5v2h6a.5.5 0 0 1 .5.5c0 .253.08.644.306.958.207.288.557.542 1.194.542.637 0 .987-.254 1.194-.542.226-.314.306-.705.306-.958a.5.5 0 0 1 .5-.5h6v-2A1.5 1.5 0 0 0 14.5 2h-13z"/>
+                <path d="M16 6.5h-5.551a2.678 2.678 0 0 1-.443 1.042C9.613 8.088 8.963 8.5 8 8.5c-.963 0-1.613-.412-2.006-.958A2.679 2.679 0 0 1 5.551 6.5H0v6A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-6z"/>
+              </svg>Email: Isac.andrade@gmail.com</li>
+              <li class="list-group-item">Créditos cursados: 534 Horas</li>
+              <li class="list-group-item"><div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Temas
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Padrão</a></li>
+                  <li><a class="dropdown-item" href="#">Escuro</a></li>
+                  <li><a class="dropdown-item" href="#">Claro</a></li>
+                </ul>
+              </div></li>
+            </ul>
+          </div>
+    
+    </div><br>
 
     <td>
-        <b>DISCIPLINAS CURSADAS</b><br>
+
+        <b><!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                Disciplinas Cursadas
+            </button>
+            
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Detalhes</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                   <p>ELETROMAGNETISMO: 45 de 64 horas cursadas </p>
+                   <p>TECNOLOGIAS WEB: 45 de 64 horas cursadas</p>
+                   <p>HIGIENE INDUSTRIAL: 45 de 64 horas cursadas</p>
+                   <p>QUALIDADE DE SOFTWARE: 45 de 64 horas cursadas</p>
+                   <p>FUNDAMENTOS DE ADMINISTRAÇÃO: 45 de 64 horas cursadas</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary">Entedi</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                Atividades e Progresso
+              </a>
+              
+              <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasExampleLabel">Disciplinas Cursadas</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <div>
+                    <div class="modal-body">
+                        <p>ELETROMAGNETISMO: AP2 - 18 de Outubro</p>
+                        <p>TECNOLOGIAS WEB: AP2 - 18 de Outubro</p>
+                        <p>HIGIENE INDUSTRIAL: AP2 - 18 de Outubro</p>
+                        <p>QUALIDADE DE SOFTWARE: Sem atividades pendentes</p>
+                        <p>FUNDAMENTOS DE ADMINISTRAÇÃO: Sem atividades pendentes</p>
+                       </div><br>
+                       <h5>Progresso</h5>
+                       <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">ELETROMAGNETISMO</div>
+                      </div><br>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">TECNOLOGIAS WEB</div>
+                      </div><br>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">HIGIENE INDUSTRIAL</div><br>
+                      </div><br>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">QUALIDADE DE SOFTWARE</div><br>
+                      </div><br> 
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">FUNDAMENTOS DE ADMINISTRAÇÃO</div><br>
+                      </div>
+                  </div>
+                </div>
+              </div>
+        </b>
     </td><br>
 
+    
     
     <div> 
 
@@ -65,7 +191,7 @@
 
         <a class="Disciplinas" href=""> SB0486 - TECNOLOGIAS WEB</a><br><br>
 
-        <a class="Disciplinas" href=""> SB0487 -HIGIENE INDUSTRIAL</a><br><br>
+        <a class="Disciplinas" href=""> SB0487 - HIGIENE INDUSTRIAL</a><br><br>
 
         <a class="Disciplinas" href=""> SB0485 - QUALIDADE DE SOFTWARE</li></a><br><br>
 
@@ -74,30 +200,104 @@
 
     </div><br><br>
 
-    <div id="Progressão">
-        Disciplinas Obrigatórias: <label for="file" ></label><progress id="file" max="100" value="32"> 32%</progress><br>
-        Disciplinas eletivas: <label for="file" ></label><progress id="file" max="100" value="50"> 50%</progress><br>
-        Horas de estágio obrigatório: <label for="file" ></label><progress id="file" max="100" value="32"> 32%</progress><br>
-        Horas complementares: <label for="file" ></label><progress id="file" max="100" value="21"> 21%</progress><br>
-        Horas de extensão: <label for="file" ></label><progress id="file" max="100" value="40"> 40%</progress><br>
-    Horas de programação: <label for="file" ></label><progress id="file" max="100" value="67"> 67%</progress><br>
-    </div><br>
+    
 
-    <table border="2">
-        <tr>
-            <td><b>Atividades Integralizadas</b></td> 
-            <td><b>Estágio</b></td>
-            <td><b>Monitoria</b>/</td>
-            <td><b>Projeto de Extensão</b></td>
-        </tr>
-        <tr>
-            <td>Progresso</td>
-            <td>20%</td>
-            <td>79%</td>
-            <td>100%</td>
-        </tr>
+    <div>
+        <h3>Progressão <div class="spinner-grow" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div></h3>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Disciplinas Obrigatórias
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <label for="file" ></label><progress id="file" max="100" value="32"> 32%</progress>
+                    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-light p-3 rounded-2" tabindex="0">
+                        <h5 id="scrollspyHeading1">Descrição</h5>
+                        <p>Disciplinas de cunho obrigatório as quais fazem parte da carga horária principal da disciplina. A não conclusão de quaisquer disciplinas obrigatórias resulta no impedimento do discicente de concluir o curso</p>
+                      </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Disciplinas eletivas
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <label for="file" ></label><progress id="file" max="100" value="50"> 50%</progress>
+                      <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-light p-3 rounded-2" tabindex="0">
+                        <h5 id="scrollspyHeading1">Descrição</h5>
+                        <p>Disciplinas de cunho obrigatório as quais fazem parte da carga horária principal da disciplina. A não conclusão de quaisquer disciplinas obrigatórias resulta no impedimento do discicente de concluir o curso</p>
+                      </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Horas de estágio obrigatório
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <label for="file" ></label><progress id="file" max="100" value="32"> 32%</progress>
+                    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-light p-3 rounded-2" tabindex="0">
+                        <h5 id="scrollspyHeading1">Descrição</h5>
+                        <p>Disciplinas de cunho obrigatório as quais fazem parte da carga horária principal da disciplina. A não conclusão de quaisquer disciplinas obrigatórias resulta no impedimento do discicente de concluir o curso</p>
+                      </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Horas complementares
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <label for="file" ></label><progress id="file" max="100" value="21"> 21%</progress>
+                    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-light p-3 rounded-2" tabindex="0">
+                        <h5 id="scrollspyHeading1">Descrição</h5>
+                        <p>Disciplinas de cunho obrigatório as quais fazem parte da carga horária principal da disciplina. A não conclusão de quaisquer disciplinas obrigatórias resulta no impedimento do discicente de concluir o curso</p>
+                      </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+    </div><br><br>
 
-    </table><br>
+    <p>
+        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          Relação de Progresso de Atividades
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+            <table border="2">
+                <tr>
+                    <td><b>Atividades Integralizadas</b></td> 
+                    <td><b>Estágio</b></td>
+                    <td><b>Monitoria</b>/</td>
+                    <td><b>Projeto de Extensão</b></td>
+                </tr>
+                <tr>
+                    <td>Progresso</td>
+                    <td>20%</td>
+                    <td>79%</td>
+                    <td>100%</td>
+                </tr>
+        
+            </table>
+        </div>
+      </div>
 
     <footer>
         todos os direitos reservados
